@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0b223d;
+  --color-steel: #174a78;
+  --color-amber: #f5a623;
+  --color-amber-dark: #d98c0b;
+  --color-surface: #f4f6f8;
+  --color-ink: #17212b;
+  --color-muted: #64748b;
+  --color-line: #dce3ea;
+
+  --font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3 {
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-amber);
+    outline-offset: 2px;
+  }
+  img { max-width: 100%; }
+}
+
+/* Technical grid used on navy surfaces */
+.bg-blueprint {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* The one animated moment: the sight line from instrument to prism */
+@keyframes sight {
+  to { stroke-dashoffset: -28; }
+}
+.sight-line {
+  stroke-dasharray: 8 6;
+  animation: sight 1.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
