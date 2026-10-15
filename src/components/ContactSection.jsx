@@ -68,7 +68,7 @@ export default function ContactSection() {
     <section id="contact" className="bg-white py-16 sm:py-20 lg:py-24">
       <Container className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
         <div>
-          <SectionHeading eyebrow="CONTACT" title="Talk to Young Ade Former">
+          <SectionHeading eyebrow="CONTACT" title="Talk to YOUNG ADEFOMA">
             Ask about equipment, request a quote or discuss a repair. WhatsApp is the quickest route.
           </SectionHeading>
           <ul className="mt-6 divide-y divide-line border-y border-line">

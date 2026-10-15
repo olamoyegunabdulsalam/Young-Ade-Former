@@ -48,7 +48,7 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-navy shadow-[0_2px_12px_rgb(11_34_61/0.25)]">
         <Container className="flex h-16 items-center justify-between gap-4">
-          <a href="#home" aria-label="Young Ade Former, back to top" className="rounded-sm">
+          <a href="#home" aria-label="YOUNG ADEFOMA, back to top" className="rounded-sm">
             <Logo />
           </a>
 

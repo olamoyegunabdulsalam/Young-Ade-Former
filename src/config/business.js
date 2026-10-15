@@ -11,15 +11,15 @@
  *   but keep the country code or WhatsApp will not open the right chat.
  */
 export const business = {
-  name: 'Young Ade Former',
-  logoText: 'YOUNG ADE FORMER',
+  name: 'YOUNG  ADEFOMA',
+  logoText: 'YOUNG ADEFOMA',
   description:
     'Surveying and construction instruments, with a clear route for repair and servicing enquiries.',
 
   // SAMPLE DETAILS below: replace with the real ones when known (WhatsApp: digits only, with country code)
   whatsapp: '2348012345678',
   phone: '+234 801 234 5678',
-  email: 'info@youngadeformer.com',
+  email: 'info@youngadefoma.com',
   address: '12 Allen Avenue, Ikeja, Lagos, Nigeria',
   hours: 'Mon–Fri 8:00am–5:00pm, Sat 9:00am–2:00pm',
 
